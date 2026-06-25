@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Movie Show</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+
+
+<header>
+    <h1>Select Theatre & Show Time</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/movie">Movies</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+</nav>
+
+<div class="movie-card">
+
+    <img src="{{ url_for('static', filename='image/saiyaara.jpg') }}" alt="Saiyaara">
+
+    <h2>Saiyaara</h2>
+
+    <p>Romance | Drama | 2h 30m</p>
+
+    <br>
+
+    <label><strong>Select Theatre</strong></label>
+    <br><br>
+
+    <select>
+        <option>PVR Cinemas</option>
+        <option>INOX</option>
+        <option>Cinepolis</option>
+        <option>Miraj Cinemas</option>
+    </select>
+
+    <br><br>
+
+    <label><strong>Select Show Time</strong></label>
+    <br><br>
+
+    <select>
+        <option>10:00 AM</option>
+        <option>1:00 PM</option>
+        <option>4:00 PM</option>
+        <option>7:00 PM</option>
+        <option>10:00 PM</option>
+    </select>
+
+    <br><br>
+
+    <a href="/booking">Continue to Seat Booking</a>
+
+</div>
+
+
+</body>
+</html>

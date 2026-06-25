@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaHubs - Movie Ticket Booking</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+
+<header>
+    <h1>CinemaHubs - Movie Ticket Booking System</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/movie">Movies</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+</nav>
+
+<section class="movies">
+
+    <div class="movie-card">
+        <img src="{{ url_for('static', filename='image/saiyaara.jpg') }}" alt="Saiyaara">
+
+        <h2>Saiyaara</h2>
+
+        <p>Romance | Drama</p>
+
+        <a href="/movie">Book Now</a>
+    </div>
+
+    <div class="movie-card">
+        <img src="{{ url_for('static', filename='image/war2.jpg') }}" alt="War 2">
+
+        <h2>War 2</h2>
+
+        <p>Action | Thriller</p>
+
+        <a href="/movie">Book Now</a>
+    </div>
+
+</section>
+
+
+</body>
+</html>
